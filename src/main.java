@@ -28,3 +28,16 @@ public class Restaurant {
         System.out.println("Restaurant: " + name);
     }
 }
+public class MenuItem {
+    String itemName;
+    double price;
+
+    public MenuItem(String itemName, double price) {
+        this.itemName = itemName;
+        this.price = price;
+    }
+
+    public void displayItem() {
+        System.out.println(itemName + " - ₹" + price);
+    }
+}
