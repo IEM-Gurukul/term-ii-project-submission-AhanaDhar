@@ -68,3 +68,24 @@ public class Order {
         cart.showCart();
     }
 }
+public class Main {
+    public static void main(String[] args) {
+
+        User user = new User("Ahana", "Kolkata");
+
+        Restaurant r = new Restaurant("Food Palace");
+
+        MenuItem item1 = new MenuItem("Burger", 120);
+        MenuItem item2 = new MenuItem("Pizza", 250);
+
+        Cart cart = new Cart();
+        cart.addItem(item1);
+        cart.addItem(item2);
+
+        Order order = new Order(cart);
+
+        user.displayUser();
+        r.displayRestaurant();
+        order.placeOrder();
+    }
+}
