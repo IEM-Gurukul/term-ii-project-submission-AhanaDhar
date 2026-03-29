@@ -17,3 +17,14 @@ public class User {
         System.out.println("Address: " + address);
     }
 }
+public class Restaurant {
+    String name;
+
+    public Restaurant(String name) {
+        this.name = name;
+    }
+
+    public void displayRestaurant() {
+        System.out.println("Restaurant: " + name);
+    }
+}
