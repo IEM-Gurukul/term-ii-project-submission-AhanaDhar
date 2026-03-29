@@ -41,3 +41,18 @@ public class MenuItem {
         System.out.println(itemName + " - ₹" + price);
     }
 }
+import java.util.ArrayList;
+
+public class Cart {
+    ArrayList<MenuItem> items = new ArrayList<>();
+
+    public void addItem(MenuItem item) {
+        items.add(item);
+    }
+
+    public void showCart() {
+        for (MenuItem item : items) {
+            item.displayItem();
+        }
+    }
+}
