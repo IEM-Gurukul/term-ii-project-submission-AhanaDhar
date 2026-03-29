@@ -56,3 +56,15 @@ public class Cart {
         }
     }
 }
+public class Order {
+    Cart cart;
+
+    public Order(Cart cart) {
+        this.cart = cart;
+    }
+
+    public void placeOrder() {
+        System.out.println("Order placed successfully!");
+        cart.showCart();
+    }
+}
